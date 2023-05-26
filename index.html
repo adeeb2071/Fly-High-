@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fly High</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="myscript.js"></script>
+    <link rel="shortcut icon" href="Images\Logo1.jpg" type="image/jpg">
+</head>
+<body>
+    <div id="body1">
+        <img src="Images\Logo.jpg" id="logo">
+        <div id="top"><h1 class="head"><a href="index.html">Home</a></h1></div>
+        <div id="top"><h1 class="head"><a href="#about_section">About Us</a></h1></div>
+        <div id="top"><h1 class="head"><a href="#bottom">Contact Us</a></h1></div>
+        <div id="top"><h1 class="head"><a href="http://localhost/charts/" target="_blank">Charts</a></h1></div>
+        <div id="top"><h1 class="head"><a href="http://localhost/login/login.php#" target="_blank">Login</a></h1></div>
+    </div>
+    <div class="container">
+	
+        <input type="radio" id="i1" name="images" checked />
+        <input type="radio" id="i2" name="images" />
+        <input type="radio" id="i3" name="images" />
+        <input type="radio" id="i4" name="images" />
+        <input type="radio" id="i5" name="images" />	
+        
+        <div class="slide_img" id="one">			
+                
+                <img src="Images\pic3.jpg">
+                
+                    <label class="prev" for="i5"><span>&#x2039;</span></label>
+                    <label class="next" for="i2"><span>&#x203a;</span></label>	
+            
+        </div>
+        
+        <div class="slide_img" id="two">
+            
+                <img src="Images\Pilot.jpg" >
+                
+                    <label class="prev" for="i1"><span>&#x2039;</span></label>
+                    <label class="next" for="i3"><span>&#x203a;</span></label>
+            
+        </div>
+                
+        <div class="slide_img" id="three">
+                <img src="Images\How-to-Become-a-Air-Hostess-1.jpg">	
+                
+                    <label class="prev" for="i2"><span>&#x2039;</span></label>
+                    <label class="next" for="i4"><span>&#x203a;</span></label>
+        </div>
+    
+        <div class="slide_img" id="four">
+                <img src="Images\picture1.jpg">	
+                
+                    <label class="prev" for="i3"><span>&#x2039;</span></label>
+                    <label class="next" for="i5"><span>&#x203a;</span></label>
+        </div>
+    
+        <div class="slide_img" id="five">
+                <img src="Images\people.jpg">	
+                
+                    <label class="prev" for="i4"><span>&#x2039;</span></label>
+                    <label class="next" for="i1"><span>&#x203a;</span></label>
+    
+        </div>
+    
+        <div id="nav_slide">
+            <label for="i1" class="dots" id="dot1"></label>
+            <label for="i2" class="dots" id="dot2"></label>
+            <label for="i3" class="dots" id="dot3"></label>
+            <label for="i4" class="dots" id="dot4"></label>
+            <label for="i5" class="dots" id="dot5"></label>
+        </div>
+            
+    </div>
+    <div>
+        <marquee id="move_text"><a href="https://www.airindia.in/COVID-19-UPDATED.htm" target="_blank"> Visit covid-19 guidelines for current destinations, travel advice and more.</a></marquee>
+    </div>
+    <p>
+    <div id="body2">
+    <div id="search-form">
+        <div id="header">
+          <h1>SEARCH FOR CHEAP FLIGHTS</h1>
+        </div>
+        <section>
+          <div class="flight" id="flightbox">
+            
+            <form id="flight-form">
+            <!-- TRIP TYPE -->
+            <div id="flight-type">
+            
+              <form method="post">
+              <div class="info-box">
+                <input type="radio" name="flight-type" value="Return" id="return" checked />
+                <label for="return">RETURN</label>
+              </div>
+              <div class="info-box">
+                <input type="radio" name="flight-type" value="Single" id="one-way" />
+                <label for="one-way">ONE WAY</label>
+              </div>
+            </div>
+            <br>
+          <div id="names">
+          <div class="info-box" style="color: #6B6A6A;;">Name:
+            <INPUT onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))" TYPE="text" SIZE="40" MAXLENGTH="20" VALUE="Enter your Name" required>
+            
+            <!-- FROM/TO -->
+            <div id="flight-depart">
+              <div class="info-box">
+                <label for="">LEAVING FROM</label>
+                <div id="depart-res"></div>
+                <select value="Choose Airport">
+                    <option>Indira Gandhi International Airport – DEL</option>
+                    <option>Donakonda Airport</option>
+                    <option>Kadapa Airport</option>
+                    <option>Chhatrapati Shivaji International Airport (BOM)</option>
+                    <option>Chennai International Airport (MAA)</option>
+                    <option>Netaji Subhas Chandra Bose International Airport (CCU)</option>
+                    <option>Chaudhary Charan Singh International Airport (LKO) </option>
+                    <option>Sri Guru Ram Dass Jee International Airport (ATQ)</option>
+                    <option>Visakhapatnam International Airport (VTZ)</option>
+                    <option>Kannur International Airport  CNN</option>
+                    <option>Surat International Airport  (STV)</option>
+                    <option>Devi Ahilya Bai Holkar Airport (IDR)</option>
+                    <option>Cochin International Airport (COK) </option>
+                    <option>Pune Airport (PNQ)</option>
+                    <option>Thiruvananthapuram International Airport (TRV)</option>
+                    <option>Coimbatore International Airport (CJB)</option>
+                    <option>Calicut International Airport (CCJ)</option>
+                    <option>Biju Patnaik International Airport (BBI)</option>
+                    <option>Lokpriya Gopinath Bordoloi International Airport (GAU)</option>
+                    <option>Lal Bahadur Shastri International Airport (VNS)</option>
+                    <option>Rajiv Gandhi International Airport (HYD)</option>
+                    <option>Tiruchirappalli International Airport (TRZ)</option>
+                    <option>Dr. Babasaheb Ambedkar International Airport (NAG)</option>
+                    <option>Sheikhul Aalam International Airport (SXR)</option>
+                    <option>Imphal International Airport (IMF)</option>
+                    <option>Jaipur International Airport (JAI)</option>
+                    <option>Madurai Airport (IXM)</option>
+                    <option>Bagdogra International Airpor(IXB)</option>
+                    <option>Jay Prakash Narayan International Airport (PAT)</option>
+                    <option>Mangalore International Airport (IXE)</option>
+                    <option>Chandigarh International Airport (IXC)</option>
+                </select>
+              </div>
+              <div class="info-box" id="arrive-box">
+                <label for="">ARRIVING AT</label>
+                <div id="arrive-res"></div><select value="Choose Airport">
+                        <option>Indira Gandhi International Airport – DEL</option>
+                        <option selected="selected">Donakonda Airport</option>
+                        <option>Kadapa Airport</option>
+                        <option>Chhatrapati Shivaji International Airport (BOM)</option>
+                        <option>Chennai International Airport (MAA)</option>
+                        <option>Netaji Subhas Chandra Bose International Airport (CCU)</option>
+                        <option>Chaudhary Charan Singh International Airport (LKO) </option>
+                        <option>Sri Guru Ram Dass Jee International Airport (ATQ)</option>
+                        <option>Visakhapatnam International Airport (VTZ)</option>
+                        <option>Kannur International Airport  CNN</option>
+                        <option>Surat International Airport  (STV)</option>
+                        <option>Devi Ahilya Bai Holkar Airport (IDR)</option>
+                        <option>Cochin International Airport (COK) </option>
+                        <option>Pune Airport (PNQ)</option>
+                        <option>Thiruvananthapuram International Airport (TRV)</option>
+                        <option>Coimbatore International Airport (CJB)</option>
+                        <option>Calicut International Airport (CCJ)</option>
+                        <option>Biju Patnaik International Airport (BBI)</option>
+                        <option>Lokpriya Gopinath Bordoloi International Airport (GAU)</option>
+                        <option>Lal Bahadur Shastri International Airport (VNS)</option>
+                        <option>Rajiv Gandhi International Airport (HYD)</option>
+                        <option>Tiruchirappalli International Airport (TRZ)</option>
+                        <option>Dr. Babasaheb Ambedkar International Airport (NAG)</option>
+                        <option>Sheikhul Aalam International Airport (SXR)</option>
+                        <option>Imphal International Airport (IMF)</option>
+                        <option>Jaipur International Airport (JAI)</option>
+                        <option>Madurai Airport (IXM)</option>
+                        <option>Bagdogra International Airpor(IXB)</option>
+                        <option>Jay Prakash Narayan International Airport (PAT)</option>
+                        <option>Mangalore International Airport (IXE)</option>
+                        <option>Chandigarh International Airport (IXC)</option>
+                    </select>
+              </div>
+            </div>
+            
+            <!-- FROM/TO -->
+            <div id="flight-dates">
+              <div class="info-box">
+                <label for="">LEAVING ON</label>
+                <input type="date" name="flight" min="2022-09-08" max="2022-12-30">
+              </div>
+              <div class="info-box" id="return-box">
+                <label for="">RETURNING ON</label>
+                <input type="date" name="flight" min="2022-09-08" max="2022-12-30">
+              </div>
+            </div>
+            
+            <!-- PASSENGER INFO -->
+            <div id="flight-info">
+              <div class="info-box">
+                <label for="adults">ADULTS</label>
+                <select name="adults" id="adults">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+              <div class="info-box">
+                <label for="children">CHILDREN</label>
+                <select name="children" id="children">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="0">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+              <div class="info-box">
+                <label for="class-type">CLASS</label>
+                <select name="class-type" id="class-type">
+                  <option value="Economy">ECONOMY</option>
+                  <option value="Business">BUSINESS</option>
+                  <option value="First">FIRST CLASS</option>
+                </select>
+              </div>
+          </div>
+          
+            <!-- SEARCH BUTTON -->
+          <div id="flight-search">
+            <div class="info-box">
+              <input type="submit" id="search-flight" value="SEARCH FLIGHTS"/>
+            </div>
+          </div>
+            
+          </form> 
+          </div>
+        </section>
+      
+        <div id="calender">
+          <div class="nav">
+            <button id="prev"><</button>
+            <p><span id="month"></span>
+              <span id="year"></span></p>
+            <button id="next">></button>
+          </div>
+          <table id="cal"></table>
+          </div>
+          
+    </div>
+    <div id="confirm"></div>
+    
+    </div>
+    
+    </p>
+    <div id="about_section">
+        <h2 style="color: white;background-color:#FF6347; font-family: Arial, Helvetica, sans-serif;"><u>
+            ABOUT US</h2></u>
+    </div>
+    <div id="text1">
+        Fly High <img src="Images\Logo.jpg" width="300px" height="200px" style="float:right; margin: 10px; border: 2px solid black;
+        box-shadow: 0 0 5px black ;" > is India’s largest passenger airline with a market share of 56.9% as of June, 2022. We primarily operate in India’s domestic air travel market as a low-cost carrier with focus on our three pillars – offering low fares, being on-time and delivering a courteous and hassle-free experience. Fly-High has become synonymous with being on-time. 
+        <p>Since our inception in August 2006, we have grown from a carrier with one plane to a fleet of 279 aircraft today. A uniform fleet for each type of operation,   high operational reliability and an award-winning service make us one of the most reliable airlines in the world.
+        Fly High has a total destination count of 97 with 74 domestic destinations and 25 International. </p>
+        <b><h3><u>The Preferred Airline</h3></b></u>
+        <p>Fly High is not only the most efficient low fare operator domestically but is also comparable with global low cost airlines. We are constantly enhancing our engagement with our passengers to augment their travel experience. From multichannel direct sales (including online flight booking, call centers and airport counters), to online flight status checking, we have transformed air travel in India. Today, we are India’s most preferred airline. At Fly High, low fares come with high quality.</p>
+        <b><h3><u>Great Place to Work</h3></b></u>
+        <p>Being courteous and hassle-free starts with being a hassle-free place to work. A highly engaged and motivated workforce leads to higher levels of customer service. Our state-of-the-art ‘ifly’ facility is designed to deliver a real-time training experience to all our new recruits. This training facility is considered to be one the best aviation training facilities in India. With our people-friendly culture at the heart of all we do, we continuously help the company staff find work-life balance. Having won ‘Companies with Great Managers’ award three years in a row and being ‘Great place to work - Certified’ in 2021, is testimonial to the culture we have, making us one of the best launchpads for future leaders.</p
+        
+        
+        <b><h3><u>Fly-HighReach:<img src="Images\inside.jpg" width="340px" height="280px" style="float:left; margin: 10px; border: 2px solid black; box-shadow: 0 0 5px black ;" ></h3></b></u>
+        Our Corporate Social Responsibility (CSR) initiative Fly-High Reach focuses on four broad themes: Children and Education, Women Empowerment, Environment and Heritage. We work towards upliftment of communities not just around us but also far-flung areas in the country. After all, India’s holistic progress is rooted in the collective aspirations of its people.
+        <b><h3><u>Facts and Figures:</h3></b></u>
+        <br>•	Market share of 56.9% as of June, 2022.
+        <br>•	Named as Aon Hewitt Best Employers India for the year 2016 and 2017
+        <br>•	Fleet of 279 aircraft including 142 new generation A320 NEOs, 48 A320 CEOs, 35 ATRs and 52 A321 NEO.
+        <br>•	Best Low-Cost Airline, in India by SKYTRAX World Airline Awards for 10 consecutive years (2010-2019)
+        <br>•	Recognized as ‘Great Place to Work’ for in India’ for 8 years in a row (2008- 2015) and for the 9th time in 2021.
+        <br>•	Fly-High has been ranked as the 4th most punctual airline globally in 2018, 6th most punctual airline globally in 2019 and 3rd most punctual airline globally in 2021 by OAG Punctuality League.
+
+    </div>
+    <p>
+    <div id="bottom">
+        <a class="social-icon" href="https://www.instagram.com/weflyhigh9/" target="_blank"> <ion-icon name="logo-instagram"></ion-icon></a>
+        <a class="social-icon" href="https://twitter.com/we_fly_high_9" target="_blank"> <ion-icon name="logo-twitter"></ion-icon></a>
+        <a class="social-icon" href="https://www.facebook.com/profile.php?id=100084827943465" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+        <p>
+        <a class="totop" href="#body1">Back to top</a>
+        </p>
+    </div>
+    </p>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
